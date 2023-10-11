@@ -1,0 +1,29 @@
+#mainTable{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*#mainTable>thead>tr>th{
+    color: red;
+}
+#mainTable>tbody>tr>td{
+    color: blue;
+}*/
+#mainTable th{
+    color: red;
+    border: 2px solid #ddd;
+    text-align: center;
+}
+
+#mainTable td{
+    color: green;
+    border: 2px solid #ddd;
+    text-align: center;
+}
+#raja{
+    border: 2px solid #ddd;
+    text-align: center;
+}
