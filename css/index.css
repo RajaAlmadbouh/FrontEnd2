@@ -1,0 +1,37 @@
+#headerDiv{
+    background-color: #1a1a1a;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#headerDiv img{
+    height: 100px;
+    width: 140px;
+    float: left;
+}
+
+#headerDiv h1{
+    color: #fff;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-right: 40px;
+    float: left;
+}
+
+#headerDiv a{
+    color: #fff;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-top: 40px;
+    float: left;
+    text-decoration: none;
+    background-color: gray;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
