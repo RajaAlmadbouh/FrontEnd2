@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 /*add style header*/
 #headerDiv{
     background-color: #1a1a1a;
@@ -36,14 +39,45 @@
     border-radius: 5px;
 }
 
+/*add style main*/
+.gridContener{
+    margin-top: 110px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    /*text-align: center;*/
+    border: 1px solid #1a1a1a;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:#ceccccd3;
+   
+}
+
+.gridItem{
+    text-align: center; 
+    padding: 25px;
+    border: 1px solid #464545;
+    border-radius: 5px;
+    background-color: #e6e2e2;
+
+}
+
+.gridItem img{
+    
+}
+
+
 /*add style footer*/
 #footerDiv{
     background-color: #1a1a1a;
     height: 50px;
     width: 100%;
-    position: fixed;
+   /* position: fixed;*/
     bottom: 0;
     left: 0;
+    
 }
 
 #footerDiv p{
