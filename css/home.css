@@ -13,7 +13,7 @@
     float: left;
 }
 
-#headerDiv h1{
+#headerDiv h1 {
     color: #fff;
     font-size: 50px;
     margin-left: 100px;
@@ -21,6 +21,7 @@
     margin-right: 40px;
     float: left;
 }
+
 
 #headerDiv a{
     color: #fff;
