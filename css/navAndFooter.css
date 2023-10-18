@@ -1,3 +1,4 @@
+/*add style header*/
 #headerDiv{
     background-color: #1a1a1a;
     height: 100px;
@@ -13,7 +14,7 @@
     float: left;
 }
 
-#headerDiv h1 {
+#headerDiv h1{
     color: #fff;
     font-size: 50px;
     margin-left: 100px;
@@ -21,7 +22,6 @@
     margin-right: 40px;
     float: left;
 }
-
 
 #headerDiv a{
     color: #fff;
@@ -51,5 +51,25 @@
     margin-left: 40px;
     margin-top: 10px;
     text-align: center;
+}
+
+/*make the nav and footer responsive for mobile , tab and pc */
+
+/*we can change the style depends on the user or client screen width */
+
+body{
+    background-color: pink;
+}
+
+@media screen and (max-width: 680px) {
+    body{
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        background-color: lightgreen;
+    }
 }
 
