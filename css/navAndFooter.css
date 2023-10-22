@@ -57,19 +57,46 @@
 
 /*we can change the style depends on the user or client screen width */
 
-body{
-    background-color: pink;
+
+
+@media screen and (max-width: 500px) {
+   /* #headerDiv{
+        height: 150px;
+    }*/
+    #headerDiv h1{
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    #headerLinks{
+        margin-top: 112px;
+    }
+    #headerDiv a{
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+
+    
 }
 
-@media screen and (max-width: 680px) {
-    body{
-        background-color: red;
+@media screen and (max-width: 700px) {
+    #headerLinks{
+        margin-top: 2px;
+    }
+    #headerDiv h1{
+        margin-left: 10px;
+    }
+    #headerDiv a{
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+
+
+}
+
+@media screen and (min-width: 900px) {
+    #headerDiv h1{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
-
-@media screen and (max-width: 480px) {
-    body{
-        background-color: lightgreen;
-    }
-}
-
