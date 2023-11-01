@@ -1,4 +1,8 @@
 /*add style header*/
+#contactForm{
+    margin-top: 100px;
+}
+
 #headerDiv{
     background-color: #1a1a1a;
     height: 100px;
