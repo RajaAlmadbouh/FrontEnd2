@@ -13,6 +13,7 @@ contactForm.addEventListener('submit',function(e){
         showConfirmButton: false,
         timer: 7000
       });
+      location.replace("../index.html");
     }
 
 );
