@@ -186,4 +186,12 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .container h-100{
+    margin-top: 110px;
+  }
+
+  #logIn{
+    margin-top: 111px;
+  }
   
