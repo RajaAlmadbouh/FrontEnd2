@@ -1,9 +1,13 @@
 var formRegister=document.getElementById("formRegister");
-var formName=document.getElementById("form3Example1c");
+var formName=document.getElementById("form3Example1c").hide;
 var formEmail=document.getElementById("form3Example3c");
 var formPass=document.getElementById("form3Example4c");
 var formRepPass=document.getElementById("form3Example4cd");
+ 
+({
 
+
+})
 formRegister.addEventListener('submit',function(e){
     e.preventDefault();
     if(formPass.value != formRepPass.value){
@@ -13,6 +17,7 @@ formRegister.addEventListener('submit',function(e){
             title: 'is not password',
             showConfirmButton: false,
             timer: 7000
+          
           });//end Swet Alert
 
     }//end if
