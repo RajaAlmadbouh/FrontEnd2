@@ -31,6 +31,9 @@ formRegister.addEventListener('submit',function(e){
             password : formPass.value
         };
 
+
+        if(usersData != null){ 
+        let isExiset=false;
         for(let i=0 ; usersData.length ; i++){
             if(usersData[i]['email'] == formEmail.value){
 
@@ -42,6 +45,7 @@ formRegister.addEventListener('submit',function(e){
                     timer: 7000
                   
                   });//end Swet Alert
+                  let isExiset=false;
                   return ; 
             }
             else if (usersData[i]['name'] == formName.value){
@@ -53,22 +57,47 @@ formRegister.addEventListener('submit',function(e){
                     timer: 7000
                   
                   });//end Swet Alert
+                  let isExiset=false;
                   return ; 
             }
             else{
-                usersData.push(user);
-                localStorage.setItem("users",JSON.stringify(usersData));
+                let isExiset=true;
 
-                Swal.fire({
-                 position: 'center',
-                 icon: 'success',
-                 title: 'Your account is created . ',
-                 showConfirmButton: false,
-                 timer: 7000
-              });
+               
+                
             }//end else
         }//end for
+        
+        if(isExiset == true){
+            usersData.push(user);
+            localStorage.setItem("users",JSON.stringify(usersData));
+    
+            Swal.fire({
+             position: 'center',
+             icon: 'success',
+             title: 'Your account is created . ',
+             showConfirmButton: false,
+             timer: 7000
+          });
+        }
+    }// end if is not null
 
+    else{
+        //usersData = [];
+        usersData.push(user);
+        localStorage.setItem("users",JSON.stringify(usersData));
+        console.log(localStorage.getItem('users'));
+
+        Swal.fire({
+         position: 'center',
+         icon: 'success',
+         title: 'Your account is created . ',
+         showConfirmButton: false,
+         timer: 7000
+      });
+    }
+
+    
         
     }
 });
