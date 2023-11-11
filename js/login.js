@@ -4,7 +4,8 @@ var passForm = document.getElementById('form2Example2');
 
 logInForm.addEventListener('submit',function(e){
     e.preventDefault();
-
+    let usersData = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [] ;
+    
     if(emailForm.value == localStorage.getItem('email') && passForm.value == localStorage.getItem('password')){
        /* Swal.fire({
             position: 'center',
