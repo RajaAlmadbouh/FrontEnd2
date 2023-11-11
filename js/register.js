@@ -3,12 +3,14 @@ var formName=document.getElementById("form3Example1c");
 var formEmail=document.getElementById("form3Example3c");
 var formPass=document.getElementById("form3Example4c");
 var formRepPass=document.getElementById("form3Example4cd");
-var usersData = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [] ;
+var usersData = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : ['hhh'] ;
  
 
 
 formRegister.addEventListener('submit',function(e){
     e.preventDefault();
+
+   // alert();
     if(formPass.value != formRepPass.value){
         Swal.fire({
             position: 'center',
@@ -31,10 +33,12 @@ formRegister.addEventListener('submit',function(e){
             password : formPass.value
         };
 
-
+console.log(user);
+console.log(usersData)
         if(usersData != null){ 
         let isExiset=false;
         for(let i=0 ; usersData.length ; i++){
+            console.log(usersData[i]['email']);
             if(usersData[i]['email'] == formEmail.value){
 
                 Swal.fire({
@@ -45,7 +49,7 @@ formRegister.addEventListener('submit',function(e){
                     timer: 7000
                   
                   });//end Swet Alert
-                  let isExiset=false;
+                  isExiset=false;
                   return ; 
             }
             else if (usersData[i]['name'] == formName.value){
@@ -57,18 +61,19 @@ formRegister.addEventListener('submit',function(e){
                     timer: 7000
                   
                   });//end Swet Alert
-                  let isExiset=false;
+                   isExiset=false;
                   return ; 
             }
             else{
-                let isExiset=true;
+                isExiset=true;
 
                
                 
             }//end else
         }//end for
-        
+        console.log(isExiset)
         if(isExiset == true){
+            console.log(uesr);
             usersData.push(user);
             localStorage.setItem("users",JSON.stringify(usersData));
     
@@ -83,6 +88,8 @@ formRegister.addEventListener('submit',function(e){
     }// end if is not null
 
     else{
+        console.log(uesr);
+        console.log("hhhhhhhhh");
         //usersData = [];
         usersData.push(user);
         localStorage.setItem("users",JSON.stringify(usersData));
