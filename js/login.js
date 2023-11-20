@@ -30,26 +30,7 @@ logInForm.addEventListener('submit',function(e){
         timer: 7000
       }); 
     }
-   /* if(emailForm.value == localStorage.getItem('email') && passForm.value == localStorage.getItem('password')){
-       /* Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Your account exisst . ',
-            showConfirmButton: false,
-            timer: 7000
-          });
-          alert("Your account exisst");
-          window.location.href = "../index.html"; 
-          
-    }
-    else{
-        Swal.fire({
-            position: 'center',
-            icon: 'error',
-            title: 'Your account is woring . ',
-            showConfirmButton: false,
-            timer: 7000
-          }); 
-    }*/
+   
 
 });
+//Your account is woring .
